@@ -25,9 +25,9 @@ $(document).ready(function() {
     // Function to show license form
     window.showLicenseForm = function () {
         let licenseInfo = JSON.parse(localStorage.getItem('licenseInfo'));
-        $('#licenseeName').val(licenseInfo?.licenseeName || '光云');
-        $('#assigneeName').val(licenseInfo?.assigneeName || '藏柏');
-        $('#expiryDate').val(licenseInfo?.expiryDate || '2111-11-11');
+        $('#licenseeName').val(licenseInfo?.licenseeName || '证书名');
+        $('#assigneeName').val(licenseInfo?.assigneeName || '用户名');
+        $('#expiryDate').val(licenseInfo?.expiryDate || '2999-12-31');
         $('#mask, #form').show();
     };
 
