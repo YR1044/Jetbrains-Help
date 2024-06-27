@@ -37,7 +37,7 @@
                         th:text="${product.getName()}"></h1>
                     <p title="Copy to clipboard" class="truncate text-sm text-grey" onclick="copyLicense(this)"
                        data-content="复制到剪贴板">
-                        复制到剪贴板
+                       复制到剪贴板
                     </p>
                 </div>
                 <div class="mask"></div>
@@ -61,7 +61,7 @@
                         th:text="${plugin.getName()}"></h1>
                     <p title="Copy to clipboard" class="truncate text-sm text-grey" onclick="copyLicense(this)"
                        data-content="复制到剪贴板">
-                        复制到剪贴板
+                       复制到剪贴板
                     </p>
                 </div>
                 <div class="mask"></div>
@@ -74,27 +74,27 @@
      style="position:fixed;top:0;left:0;z-index:998;width:100%;height:100%;display:none;background-color:#000;opacity:0.5;overflow:hidden;"></div>
 <div id="form" style="position:fixed;top:20%;left:40%;width:40%;height:500px;z-index:999;display:none;">
     <div class="form">
-        <div class="title">License Form</div>
-        <div class="subtitle">Customization is welcome</div>
+        <div class="title">许可证信息</div>
+        <div class="subtitle">自定义许可证</div>
         <div class="input-container ic1">
             <input id="licenseeName" class="input" type="text" placeholder=" "
                    th:value="${defaults.getDefaultLicenseName()}"/>
             <div class="cut"></div>
-            <label for="licenseeName" class="placeholder">License Name</label>
+            <label for="licenseeName" class="placeholder">证书名称</label>
         </div>
         <div class="input-container ic2">
             <input id="assigneeName" class="input" type="text" placeholder=" "
                    th:value="${defaults.getDefaultAssigneeName()}"/>
             <div class="cut"></div>
-            <label for="assigneeName" class="placeholder">Assigne Name</label>
+            <label for="assigneeName" class="placeholder">分配用户名称</label>
         </div>
         <div class="input-container ic2">
             <input id="expiryDate" class="input" type="text" placeholder=""
                    th:value="${defaults.getDefaultExpiryDate()}"/>
             <div class="cut cut-short"></div>
-            <label for="expiryDate" class="placeholder">Expiry Date</label>
+            <label for="expiryDate" class="placeholder">有效期</label>
         </div>
-        <button class="submit" onclick="submitLicenseInfo(this)">Confirm</button>
+        <button class="submit" onclick="submitLicenseInfo(this)">确认</button>
     </div>
 </div>
 </body>
