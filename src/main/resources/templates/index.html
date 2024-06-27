@@ -11,15 +11,12 @@
 <body>
 <header class="tip sticky flex items-center py-6">
     <p>
-        🇨🇳 Download <a href="ja-netfilter" title="Download jetbra first">ja-netfilter.zip</a> , and configure
-        your JetBrains's <a onclick="showVmoptins()">vmoptions!</a> <br>
-        🇨🇳 Also you can <a onclick="showLicenseForm()">Refill license information</a> to customizer your license!</br>
-        <strong>🇨🇳 Please note that this page is only developed and used by <span
-                th:text="${defaults.getDefaultLicenseName()} + '/' + ${defaults.getDefaultAssigneeName()}"></span>
-            personally!</strong>
+        下载 <a href="ja-netfilter" title="Download jetbra first">ja-netfilter.zip</a> , 解压到任意路径, 然后配置你的JetBrains程序的<a onclick="showVmoptins()">vmoptions</a> ！激活后不要移动或删除ja-netfilter位置！ <br></br>
+        你也可以 <a onclick="showLicenseForm()">修改证书信息</a> 来自定义你的证书!<br></br>
+        <strong>此工具仅限个人学习使用，请于下载后24小时内删除，请支持正版！</strong>
     </p>
     <form class="parent">
-        <input type="text" class="search" id="search" placeholder="Search Product or Plugin">
+        <input type="text" class="search" id="search" placeholder="搜索产品或插件">
     </form>
 </header>
 <main id="product-list" class="px-6 z-grid py-10" style="--space: 20rem; --gutter: 3.5rem">
@@ -39,7 +36,7 @@
                     <h1 class="truncate truncate-1 color-primary mt-0 overflow-ellipsis" th:title="${product.getName()}"
                         th:text="${product.getName()}"></h1>
                     <p title="Copy to clipboard" class="truncate text-sm text-grey" onclick="copyLicense(this)"
-                       data-content="Copy to clipboard">
+                       data-content="复制到剪贴板">
                         **********
                     </p>
                 </div>
@@ -63,7 +60,7 @@
                     <h1 class="truncate truncate-1 color-primary mt-0 overflow-ellipsis" th:title="${plugin.getName()}"
                         th:text="${plugin.getName()}"></h1>
                     <p title="Copy to clipboard" class="truncate text-sm text-grey" onclick="copyLicense(this)"
-                       data-content="Copy to clipboard">
+                       data-content="复制到剪贴板">
                         **********
                     </p>
                 </div>
